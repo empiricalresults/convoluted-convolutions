@@ -285,12 +285,7 @@ def get_id(x):
         x= x[-max_sentence_length:]
     for i in range(len(x)):
         ids[i]=get_word_id(x[i])
-    #ids =ids.reshape(-1,10)
-    #return shuffle(ids).flatten()
     return ids       
-
-
-# In[ ]:
 
 def get_batch_id(batch_x):
     ids=[]
